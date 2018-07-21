@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     /**
@@ -31,6 +30,7 @@ class HomeController extends Controller
         return view('home', ['posts' => $posts]);
 
     }
+
     public function getPostForm(){
         return view('post/post_form');
     }
